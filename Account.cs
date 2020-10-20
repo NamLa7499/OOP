@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab_2
+namespace Lab3
 {
     class Account
     {
-
         private string maTk;
 
         private int soTien;
@@ -20,7 +19,11 @@ namespace Lab_2
             this.maTk = "N/A";
             this.soTien = 0;
         }
-
+        public Account(string matk, int sotien)
+        {
+            this.MaTk = matk;
+            this.SoTien = sotien;
+        }
         public void Input()
         {
             Console.Write("Nhap ma tai khoan: ");
